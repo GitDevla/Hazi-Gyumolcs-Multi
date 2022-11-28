@@ -81,7 +81,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tesco";
             this.ResumeLayout(false);
 
         }
