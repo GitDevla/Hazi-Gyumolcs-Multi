@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_name = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDown_quantity = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_price = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.button_ok = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_quantity)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_price)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -50,12 +50,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Név:";
             // 
-            // textBox1
+            // textBox_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 31);
-            this.textBox1.TabIndex = 1;
+            this.textBox_name.Location = new System.Drawing.Point(157, 23);
+            this.textBox_name.Name = "textBox_name";
+            this.textBox_name.Size = new System.Drawing.Size(120, 31);
+            this.textBox_name.TabIndex = 1;
             // 
             // label2
             // 
@@ -97,23 +97,23 @@
             0,
             0});
             // 
-            // numericUpDown1
+            // numericUpDown_price
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(157, 98);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDown_price.Location = new System.Drawing.Point(157, 98);
+            this.numericUpDown_price.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numericUpDown_price.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 31);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDown_price.Name = "numericUpDown_price";
+            this.numericUpDown_price.Size = new System.Drawing.Size(120, 31);
+            this.numericUpDown_price.TabIndex = 7;
+            this.numericUpDown_price.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -136,6 +136,7 @@
             this.button_ok.TabIndex = 9;
             this.button_ok.Text = "Módosít";
             this.button_ok.UseVisualStyleBackColor = true;
+            this.button_ok.Click += new System.EventHandler(this.button_ok_Click);
             // 
             // button_cancel
             // 
@@ -145,6 +146,7 @@
             this.button_cancel.TabIndex = 10;
             this.button_cancel.Text = "Mégse";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // FormUpdate
             // 
@@ -154,18 +156,19 @@
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_ok);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDown_price);
             this.Controls.Add(this.numericUpDown_quantity);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_name);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormUpdate";
             this.Text = "FormUpdate";
+            this.Load += new System.EventHandler(this.FormUpdate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_quantity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_price)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,11 +177,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown_quantity;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown_price;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_ok;
         private System.Windows.Forms.Button button_cancel;

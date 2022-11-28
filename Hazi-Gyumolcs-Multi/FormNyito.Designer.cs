@@ -1,6 +1,6 @@
 ﻿namespace Hazi_Gyumolcs_Multi
 {
-    partial class Form1
+    partial class FormNyito
     {
         /// <summary>
         /// Required designer variable.
@@ -42,6 +42,7 @@
             this.button_delete.TabIndex = 7;
             this.button_delete.Text = "Töröl";
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_update
             // 
@@ -51,6 +52,7 @@
             this.button_update.TabIndex = 6;
             this.button_update.Text = "Módosít";
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_insert
             // 
@@ -60,6 +62,7 @@
             this.button_insert.TabIndex = 5;
             this.button_insert.Text = "Új";
             this.button_insert.UseVisualStyleBackColor = true;
+            this.button_insert.Click += new System.EventHandler(this.button_insert_Click);
             // 
             // comboBox_fruits
             // 
@@ -79,9 +82,10 @@
             this.Controls.Add(this.button_insert);
             this.Controls.Add(this.comboBox_fruits);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Tesco";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

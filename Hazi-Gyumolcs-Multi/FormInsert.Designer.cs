@@ -31,13 +31,13 @@
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_ok = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_price = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_quantity = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_price)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_quantity)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +49,7 @@
             this.button_cancel.TabIndex = 19;
             this.button_cancel.Text = "Mégse";
             this.button_cancel.UseVisualStyleBackColor = true;
+            this.button_cancel.Click += new System.EventHandler(this.button_cancel_Click);
             // 
             // button_ok
             // 
@@ -58,6 +59,7 @@
             this.button_ok.TabIndex = 18;
             this.button_ok.Text = "Új";
             this.button_ok.UseVisualStyleBackColor = true;
+            this.button_ok.Click += new System.EventHandler(this.button_ok_Click);
             // 
             // label4
             // 
@@ -68,23 +70,23 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "Ft";
             // 
-            // numericUpDown1
+            // numericUpDown_price
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(151, 95);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDown_price.Location = new System.Drawing.Point(151, 95);
+            this.numericUpDown_price.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numericUpDown_price.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 31);
-            this.numericUpDown1.TabIndex = 16;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDown_price.Name = "numericUpDown_price";
+            this.numericUpDown_price.Size = new System.Drawing.Size(120, 31);
+            this.numericUpDown_price.TabIndex = 16;
+            this.numericUpDown_price.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -130,12 +132,12 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Mennyiség:";
             // 
-            // textBox1
+            // textBox_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(151, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 31);
-            this.textBox1.TabIndex = 12;
+            this.textBox_name.Location = new System.Drawing.Point(151, 20);
+            this.textBox_name.Name = "textBox_name";
+            this.textBox_name.Size = new System.Drawing.Size(120, 31);
+            this.textBox_name.TabIndex = 12;
             // 
             // label1
             // 
@@ -154,17 +156,17 @@
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_ok);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numericUpDown_price);
             this.Controls.Add(this.numericUpDown_quantity);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_name);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "FormInsert";
             this.Text = "FormInsert";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_price)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_quantity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,11 +178,11 @@
         private System.Windows.Forms.Button button_cancel;
         private System.Windows.Forms.Button button_ok;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown_price;
         private System.Windows.Forms.NumericUpDown numericUpDown_quantity;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_name;
         private System.Windows.Forms.Label label1;
     }
 }
