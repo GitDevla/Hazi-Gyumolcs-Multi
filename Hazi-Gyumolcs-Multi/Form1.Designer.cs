@@ -28,13 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
+            this.button_insert = new System.Windows.Forms.Button();
+            this.comboBox_fruits = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // button_delete
+            // 
+            this.button_delete.Location = new System.Drawing.Point(296, 72);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(121, 33);
+            this.button_delete.TabIndex = 7;
+            this.button_delete.Text = "Töröl";
+            this.button_delete.UseVisualStyleBackColor = true;
+            // 
+            // button_update
+            // 
+            this.button_update.Location = new System.Drawing.Point(155, 72);
+            this.button_update.Name = "button_update";
+            this.button_update.Size = new System.Drawing.Size(121, 33);
+            this.button_update.TabIndex = 6;
+            this.button_update.Text = "Módosít";
+            this.button_update.UseVisualStyleBackColor = true;
+            // 
+            // button_insert
+            // 
+            this.button_insert.Location = new System.Drawing.Point(17, 22);
+            this.button_insert.Name = "button_insert";
+            this.button_insert.Size = new System.Drawing.Size(121, 33);
+            this.button_insert.TabIndex = 5;
+            this.button_insert.Text = "Új";
+            this.button_insert.UseVisualStyleBackColor = true;
+            // 
+            // comboBox_fruits
+            // 
+            this.comboBox_fruits.FormattingEnabled = true;
+            this.comboBox_fruits.Location = new System.Drawing.Point(17, 72);
+            this.comboBox_fruits.Name = "comboBox_fruits";
+            this.comboBox_fruits.Size = new System.Drawing.Size(121, 33);
+            this.comboBox_fruits.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(435, 126);
+            this.Controls.Add(this.button_delete);
+            this.Controls.Add(this.button_update);
+            this.Controls.Add(this.button_insert);
+            this.Controls.Add(this.comboBox_fruits);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button_delete;
+        private System.Windows.Forms.Button button_update;
+        private System.Windows.Forms.Button button_insert;
+        private System.Windows.Forms.ComboBox comboBox_fruits;
     }
 }
 
